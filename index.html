@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<base href="/">
+
+		<title>udp.sh</title>
+
+		<link rel="stylesheet" href="assets/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="assets/typed.js"></script>
+	</head>
+
+	<body>
+		<div class="text-editor-wrap"><div class="text-body"><span id="typed" style="white-space:pre;word-wrap: break-word;"></span></div></div>
+	</body>
+
+	  <script>
+		$(function(){
+			$("#typed").typed({strings: ['//hello.cpp\n#include <iostream>\n\nint main() {\n    std::cout << "GitHub: @toomuchio" << std::endl;\n    std::cout << "Email: me@udp.sh" << std::endl;\n\n    return 0;\n}\n\ng++ hello.cpp -o hello && ./hello\n'], contentType: 'text', typeSpeed: 0, callback: function() { $("#typed").append('GitHub: <a href="https://github.com/toomuchio" target="_blank">@toomuchio</a>\nEmail: <a href="mailto:me@udp.sh">me@udp.sh</a>'); } });
+		});
+	  </script>
+</html>
+

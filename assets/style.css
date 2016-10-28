@@ -1,0 +1,76 @@
+body {
+	padding-top: 50px;
+	background: #587993;
+}
+
+/*Terminal*/
+.text-editor-wrap {
+	display: block;
+	margin: auto;
+	max-width: 1000px;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
+	clear: both;
+	overflow: hidden;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.text-body {
+	background-color: rgba(0, 0, 0, 0.85);
+	padding: 25px;
+	color: #0F0;
+	text-shadow: #000 0px 1px 0px;
+	font-family: "Consolas", "Courier New", "Courier";
+	font-size: 1.75em;
+	line-height: 1.40em;
+	font-weight: 500;
+	text-align: left;
+	overflow: hidden;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+/*Cursor*/
+.typed-cursor {
+	opacity: 1;
+	font-weight: 100;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	-ms-animation: blink 0.7s infinite;
+	-o-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+@-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-ms-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
