@@ -1,3 +1,8 @@
+$(function(){
+    $("#typed").typed({strings: ['//hello.cpp\n#include <iostream>\n\nint main() {\n    std::cout << "GitHub: @toomuchio" << std::endl;\n    std::cout << "Email: me@udp.sh" << std::endl;\n\n    return 0;\n}\n\ng++ hello.cpp -o hello && ./hello\n'], contentType: 'text', typeSpeed: 0, callback: function() { $("#typed").append('GitHub: <a href="https://github.com/toomuchio" target="_blank">@toomuchio</a>\nEmail: <a href="mailto:me@udp.sh">me@udp.sh</a>'); } });
+});
+
+
 // The MIT License (MIT)
 
 // Typed.js | Copyright (c) 2014 Matt Boldt | www.mattboldt.com
