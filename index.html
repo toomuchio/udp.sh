@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=500">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
-		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; frame-ancestors 'none'; form-action 'none'; base-uri https://udp.sh; upgrade-insecure-requests; block-all-mixed-content; disown-opener; reflected-xss block; referrer no-referrer; require-sri-for script style">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' cdnjs.cloudflare.com; style-src 'self'; img-src 'self'; font-src 'self'; frame-ancestors 'none'; form-action 'none'; base-uri https://udp.sh; upgrade-insecure-requests; block-all-mixed-content; disown-opener; reflected-xss block; referrer no-referrer; require-sri-for script style">
 		<meta http-equiv="X-Content-Type-Options" content="nosniff">
 		<meta http-equiv="Referrer-Policy" content="no-referrer">
 		<meta http-equiv="X-XSS-Protection" content="1; mode=block">
@@ -19,13 +19,7 @@
 	</head>
 
 	<body>
-		<div class="text-editor-wrap"><div class="text-body"><span id="typed" style="white-space:pre;word-wrap: break-word;"></span></div></div>
+		<div class="text-editor-wrap"><div class="text-body"><span id="typed"></span></div></div>
 	</body>
-
-	  <script>
-		$(function(){
-			$("#typed").typed({strings: ['//hello.cpp\n#include <iostream>\n\nint main() {\n    std::cout << "GitHub: @toomuchio" << std::endl;\n    std::cout << "Email: me@udp.sh" << std::endl;\n\n    return 0;\n}\n\ng++ hello.cpp -o hello && ./hello\n'], contentType: 'text', typeSpeed: 0, callback: function() { $("#typed").append('GitHub: <a href="https://github.com/toomuchio" target="_blank">@toomuchio</a>\nEmail: <a href="mailto:me@udp.sh">me@udp.sh</a>'); } });
-		});
-	  </script>
 </html>
 
